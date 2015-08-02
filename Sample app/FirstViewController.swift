@@ -43,7 +43,6 @@ class FirstViewController: UIViewController {
         navigationImage.layer.position = CGPoint(x: 200, y: 50)
         navigation.addSubview(navigationImage)
         
-        let navAreaSize = navigation.frame.size
 
         let backBtn = UIButton(frame: CGRectMake(0,0,80,40))
         backBtn.layer.masksToBounds = true
