@@ -16,6 +16,7 @@
 		9F408B041B5F6D7D009E0B51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F408B031B5F6D7D009E0B51 /* Images.xcassets */; };
 		9F408B071B5F6D7D009E0B51 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F408B051B5F6D7D009E0B51 /* LaunchScreen.xib */; };
 		9F408B131B5F6D7D009E0B51 /* Sample_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F408B121B5F6D7D009E0B51 /* Sample_appTests.swift */; };
+		9FD3278E1B834C720028EED6 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3278D1B834C720028EED6 /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		9F408B0C1B5F6D7D009E0B51 /* Sample appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F408B111B5F6D7D009E0B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F408B121B5F6D7D009E0B51 /* Sample_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_appTests.swift; sourceTree = "<group>"; };
+		9FD3278D1B834C720028EED6 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9F12BB901B6EA9290017DD83 /* NextViewController.swift */,
 				9F12BB881B6E99300017DD83 /* SecondViewController.swift */,
 				9F12BB8A1B6E99470017DD83 /* ThirdViewController.swift */,
+				9FD3278D1B834C720028EED6 /* CustomViewController.swift */,
 				9F12BB8E1B6EA4820017DD83 /* navi.jpg */,
 			);
 			path = "Sample app";
@@ -224,6 +227,7 @@
 				9F12BB911B6EA9290017DD83 /* NextViewController.swift in Sources */,
 				9F12BB891B6E99300017DD83 /* SecondViewController.swift in Sources */,
 				9F12BB871B6E99100017DD83 /* FirstViewController.swift in Sources */,
+				9FD3278E1B834C720028EED6 /* CustomViewController.swift in Sources */,
 				9F12BB8B1B6E99470017DD83 /* ThirdViewController.swift in Sources */,
 				9F408AFD1B5F6D7D009E0B51 /* AppDelegate.swift in Sources */,
 			);

@@ -29,31 +29,6 @@ class FirstViewController: UIViewController {
         // 諸々準備
         self.title = "1st"
         self.tabBarItem.title = "1st"
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.whiteColor()
-
-        // navi
-        let navigation = UIView(frame: CGRectMake(0, 0, 400, 200))
-        
-        let navigationImage = UIImageView(frame: CGRectMake(0,0,400,200))
-        navigationImage.image = UIImage(named: "navi.jpg")
-        navigationImage.layer.position = CGPoint(x: 200, y: 50)
-        navigation.addSubview(navigationImage)
-        
-
-        let backBtn = UIButton(frame: CGRectMake(0,0,80,40))
-        backBtn.layer.masksToBounds = true
-        backBtn.setTitle("back", forState: UIControlState.Normal)
-        backBtn.layer.cornerRadius = 5.0
-        backBtn.backgroundColor = UIColor.grayColor()
-        backBtn.addTarget(self, action: "backPage:", forControlEvents: UIControlEvents.TouchUpInside)
-        backBtn.center = CGPoint(x: navigation.bounds.width - backBtn.frame.size.width * 1.5, y: 50)
-        
-        navigation.addSubview(backBtn)
-
         
         // next
         let nextBtn: UIButton = UIButton(frame: CGRectMake(0,0,120,50))
@@ -65,10 +40,11 @@ class FirstViewController: UIViewController {
         nextBtn.addTarget(self, action: "nextPage:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(nextBtn);
         
-
-        self.navigationController?.view.addSubview(navigation)
-
-
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,10 +55,6 @@ class FirstViewController: UIViewController {
     
     func nextPage(sender: UIButton){
         self.navigationController?.pushViewController(NextViewController(), animated: true)
-    }
-    
-    func backPage(sender: UIButton) {
-        self.navigationController?.popViewControllerAnimated(true)
     }
     
 

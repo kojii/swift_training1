@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let secondView = SecondViewController()
         let thirdView  = ThirdViewController()
 
-        let navi = UINavigationController(rootViewController: firstView)
+        let navi = CustomViewController(rootViewController: firstView)
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(
